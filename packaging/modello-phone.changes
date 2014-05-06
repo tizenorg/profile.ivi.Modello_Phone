@@ -1,3 +1,6 @@
+* Tue May 06 2014 brianjjones <brian.j.jones@intel.com> submit/tizen/20140404.164007@048ebca
+- Updated to work with Crosswalk.  TIVI-3070
+
 * Thu Apr 03 2014 brianjjones <brian.j.jones@intel.com> 2e62fa5
 - Initial commit of the Modello Phone app
 
