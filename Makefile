@@ -1,6 +1,6 @@
-PROJECT = html5UIPhone
+PROJECT = Modello_Phone
 
-VERSION := 0.0.1
+VERSION := 0.0.2
 PACKAGE = $(PROJECT)-$(VERSION)
 
 INSTALL_FILES = $(PROJECT).wgt
