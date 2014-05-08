@@ -1,3 +1,6 @@
+* Thu May 08 2014 brianjjones <brian.j.jones@intel.com> submit/tizen_ivi/20140508.172733@8f36d63
+- Adding Modello to the app name to easily identify it
+
 * Tue May 06 2014 brianjjones <brian.j.jones@intel.com> submit/tizen/20140404.164007@048ebca
 - Updated to work with Crosswalk.  TIVI-3070
 
