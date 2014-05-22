@@ -27,3 +27,4 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root,-)
 /opt/usr/apps/.preinstallWidgets/Modello_Phone.wgt
+/opt/usr/apps/_common/icons/Phone_icon.png
