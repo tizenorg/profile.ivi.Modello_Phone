@@ -730,7 +730,7 @@ $(document).ready(
                                 if (acceptPhoneCallFromOtherWidget === true) {
 
                                     window.setTimeout(function() {
-                                        if (typeof tizen !== "undefined") {
+                                        if (typeof (tizen.application.getCurrentApplication) !== "undefined") {
                                             tizen.application.getCurrentApplication().exit();
                                         }
                                     }, 1000);

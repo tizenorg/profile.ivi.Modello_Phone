@@ -3,7 +3,7 @@
     <tizen:application id="Modello009.Phone" package="Modello009" required_version="2.1"/>
     <icon src="Phone_icon.png"/>
     <content src="index.html"/>
-    <name>Modello Phone</name>
+    <name>ModelloPhone</name>
     <tizen:privilege name="http://tizen.org/privilege/tizen"/>
     <tizen:privilege name="http://tizen.org/privilege/application.launch"/>
     <tizen:privilege name="http://tizen.org/privilege/filesystem.read"/>

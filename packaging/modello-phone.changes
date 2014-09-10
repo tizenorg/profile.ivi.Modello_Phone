@@ -1,3 +1,9 @@
+* Wed Sep 10 2014 Brian Jones <brian.j.jones@intel.com> submit/tizen_ivi/20140819.215838-1-g740adb1
+- Removing space in app name - Fix for TC-1404
+
+* Tue Aug 19 2014 Brian Jones <brian.j.jones@intel.com> accepted/tizen/ivi/20140807.054137-1-g2aae498
+- Matching config.xml icon name to the one in the .wgt file
+
 * Wed Aug 06 2014 Brian Jones <brian.j.jones@intel.com> accepted/tizen/ivi/20140702.152118-1-g0c6f8c5
 - Updating manifest to use xwalk_version instead of version - TC-1465
 
