@@ -9,6 +9,7 @@ Source0:    %{name}-%{version}.tar.bz2
 BuildRequires:  zip
 Requires:   Modello_Common
 Requires:   phoned
+BuildRequires: pkgconfig(libtzplatform-config)
 
 %description
 A proof of concept pure html5 UI
@@ -16,15 +17,14 @@ A proof of concept pure html5 UI
 %prep
 %setup -q -n %{name}-%{version}
 
-%build
-
-make wgtPkg
-
 %install
 rm -rf %{buildroot}
-%make_install
+mkdir -p %{buildroot}%{TZ_SYS_APP_PREINSTALL}
+mkdir -p %{buildroot}%{_datadir}/Modello/Common/icons
+zip -r %{buildroot}%{TZ_SYS_APP_PREINSTALL}/%{name}.wgt config.xml css data Phone_icon.png index.html js templates
+install -m 0644 Phone_icon.png %{buildroot}%{_datadir}/Modello/Common/icons
 
 %files
 %defattr(-,root,root,-)
-/opt/usr/apps/.preinstallWidgets/Modello_Phone.wgt
-/opt/usr/apps/_common/icons/Phone_icon.png
+%{TZ_SYS_APP_PREINSTALL}/Modello_Phone.wgt
+%{_datadir}/Modello/Common/icons/Phone_icon.png
