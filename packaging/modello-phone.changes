@@ -1,3 +1,6 @@
+* Mon Oct 20 2014 Jimmy Huang <jimmy.huang@intel.com> accepted/tizen/3.0.m14.3/ivi/20141018.100013-1-gce6f884
+- Fixed a bug where alpha filter is not working in contacts
+
 * Tue Oct 07 2014 Brian Jones <brian.j.jones@intel.com> submit/tizen_ivi/20141007.174646-1-g4679ed8
 - clean the spec file
 - Fix for TC-1560 UI always zoomed out
