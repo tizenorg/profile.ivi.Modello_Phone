@@ -51,8 +51,20 @@ var Phone = (function() {
 		this.contactsComputed = ko.computed(function() {
 			if (self.contactsAlphabetFilter() !== "") {
 				return ko.utils.arrayFilter(self.contacts(), function(contact) {
-					if ( !! contact.name && !! contact.name.leftLastName) {
-						return contact.name.lastName.toString().toLowerCase().trim().indexOf(
+					if (!!contact.name) {
+						var name = null;
+						if (!!contact.name.displayName){
+							name = contact.name.displayName;
+						} else if (!!contact.name.lastName) {
+							name = contact.name.lastName;
+						} else if (!!contact.name.firstName) {
+							name = contact.name.firstName;
+						}
+
+						if (!name)
+							return false;
+
+						return name.toString().toLowerCase().trim().indexOf(
 							self.contactsAlphabetFilter().toString().toLowerCase().trim()) === 0;
 					}
 					return false;
