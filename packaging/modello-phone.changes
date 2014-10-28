@@ -1,3 +1,6 @@
+* Tue Oct 28 2014 Jimmy Huang <jimmy.huang@intel.com> accepted/tizen/3.0.m14.3/ivi/20141018.100013-2-g71c6c96
+- Fixed a bug on dialing from recent history
+
 * Mon Oct 20 2014 Jimmy Huang <jimmy.huang@intel.com> accepted/tizen/3.0.m14.3/ivi/20141018.100013-1-gce6f884
 - Fixed a bug where alpha filter is not working in contacts
 

@@ -199,8 +199,17 @@ Carousel.prototype.createSwipeItem = function(callHistoryEntry, index) {
 		carouselItem.data("contact", contact);
 		carouselItem.click(function() {
 			self.swipe.trigger("slideTo", [ $(this), -1 ]);
-			var hystoryEntry = $(this).data("callhistory");
+			var historyEntry = $(this).data("callhistory");
 			var contactEntry = $(this).data("contact");
+			if (!contactEntry) {
+				contactEntry = {
+					name : {
+						displayName : historyEntry.remoteParties[0].personId,
+						firstName : "",
+						lastName : ""
+					}
+				};
+			}
 			var contact = {
 				name : {
 					displayName : contactEntry.name.displayName,
@@ -209,7 +218,7 @@ Carousel.prototype.createSwipeItem = function(callHistoryEntry, index) {
 				},
 				photoURI : contactEntry.photoURI,
 				phoneNumbers : [ {
-					number : hystoryEntry.remoteParties[0].personId
+					number : historyEntry.remoteParties[0].personId
 				} ]
 
 			};

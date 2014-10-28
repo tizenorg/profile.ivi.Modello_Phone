@@ -55,7 +55,7 @@ var telInput;
 var bootstrap;
 
 /**
-* Instance of class Carousel, this class provides methods to operate with hystory carousel.
+* Instance of class Carousel, this class provides methods to operate with history carousel.
 * * {{#crossLink "Carousel"}}{{/crossLink}}
 *
 * @property callHistoryCarousel {Object}
