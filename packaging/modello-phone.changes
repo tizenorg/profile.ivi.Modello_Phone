@@ -1,3 +1,6 @@
+* Fri Dec 05 2014 Jimmy Huang <jimmy.huang@intel.com> accepted/tizen/3.0.m14.3/ivi/20141018.100013-3-g927cca8
+- Fix TC-1906 - no call time recording when answering without phone launched
+
 * Tue Oct 28 2014 Jimmy Huang <jimmy.huang@intel.com> accepted/tizen/3.0.m14.3/ivi/20141018.100013-2-g71c6c96
 - Fixed a bug on dialing from recent history
 

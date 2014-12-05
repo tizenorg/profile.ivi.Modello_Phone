@@ -476,6 +476,8 @@ function acceptCall(contact) {
                 tizen.phone.answerCall(function(result) {
                     console.log(result.message);
                 });
+
+                CallDuration.startWatch();
             } else if (callStatus === "DISCONNECTED".toLowerCase()) {
 
                 var callNumber = contact.phoneNumbers[0] && contact.phoneNumbers[0].number ? contact.phoneNumbers[0].number : "";
