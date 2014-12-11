@@ -569,7 +569,6 @@ $(document).ready(
                             $("#noPairedDevice").show();
                         } else {
                             $("#noPairedDevice").hide();
-                            $("#loadingHistorySpinnerWrapper").show();
                             $(".caroufredsel_wrapper").show();
                         }
                     });
@@ -579,9 +578,10 @@ $(document).ready(
                             Phone.loadContacts(function(err) {
                                 if (!err) {
                                     ContactsLibrary.init();
+                                    $("#loadingHistorySpinnerWrapper").show();
                                     Phone.loadCallHistory(function(err) {
+                                        $("#loadingHistorySpinnerWrapper").hide();
                                         if (!err) {
-                                            $("#loadingHistorySpinnerWrapper").hide();
                                             callHistoryCarousel.loadCallHistory(Phone.callHistory(), 0);
                                         }
                                     });
@@ -608,8 +608,8 @@ $(document).ready(
                         if (acceptPhoneCallFromOtherWidget !== true) {
                             window.setTimeout(function() {
                                 Phone.loadCallHistory(function(err) {
+                                    $("#loadingHistorySpinnerWrapper").hide();
                                     if (!err) {
-                                        $("#loadingHistorySpinnerWrapper").hide();
                                         callHistoryCarousel.loadCallHistory(Phone.callHistory(), 0);
 
                                     }
