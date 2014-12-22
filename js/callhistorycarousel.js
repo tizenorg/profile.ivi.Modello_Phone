@@ -131,6 +131,36 @@ Carousel.prototype.loadCallHistory = function(callHistory, index) {
 	}
 };
 /**
+ * This method adds newest call history data up to the index given and reset position to start.
+ *
+ * @method addCallHistory
+ * @param  callHistory {Array} Call history array.
+ * @param  index {Integer} Index position of the last entry that needs to be added.
+ */
+Carousel.prototype.addCallHistory = function(callHistory, index) {
+        "use strict";
+        var carouselItem;
+        this.callHistory = callHistory;
+
+        if (!!this.swipe) {
+                this.swipe.trigger("removeItem", 0);
+
+                for (var i = index; i >= 0; i--) {
+                        carouselItem = this.createSwipeItem(this.callHistory[i], i);
+                        if (!!carouselItem && !!this.swipe) {
+                                this.swipe.trigger("insertItem", [ carouselItem, 0 ]);
+                        }
+                }
+
+                var html = "<li><div class='carouselEdgeBox'></div></li>";
+                this.swipe.trigger("insertItem", [ html, 0 ]);
+
+                this.swipe.trigger("slideTo", [ 0, 0, {
+                        duration : 0
+                } ]);
+        }
+};
+/**
  * This method creates one carousel item for swipe.
  *
  * @method createSwipeItem

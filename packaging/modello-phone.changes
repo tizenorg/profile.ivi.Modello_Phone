@@ -1,3 +1,6 @@
+* Mon Dec 22 2014 Jimmy Huang <jimmy.huang@intel.com> accepted/tizen/ivi/20141212.011920-1-gd50348c
+- Fix TC-2267 - Calling history refresh too slow
+
 * Thu Dec 11 2014 Jimmy Huang <jimmy.huang@intel.com> accepted/tizen/ivi/20141208.013020-1-gcd10124
 - Fix download history spinner sometimes not hiding correctly
 

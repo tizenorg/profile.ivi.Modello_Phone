@@ -701,8 +701,7 @@ $(document).ready(
                             tmpCallHistory.unshift(tmpContact[0]);
                             Phone.callHistory(tmpCallHistory);
 
-                            callHistoryCarousel.loadCallHistory(Phone.callHistory(), 0);
-
+                            callHistoryCarousel.addCallHistory(Phone.callHistory(), 0);
                         }
                     });
                     /* add listener to change call state */
