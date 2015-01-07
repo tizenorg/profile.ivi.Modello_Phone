@@ -1,6 +1,8 @@
 {
   "name": "Modello Phone",
   "xwalk_version": "0.0.2",
+  "manifest_version": 1,
+  "xwalk_media_app_class": "phone",
   "app": {
     "launch":{
       "local_path": "index.html"

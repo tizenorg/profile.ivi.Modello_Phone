@@ -1,3 +1,6 @@
+* Tue Jan 06 2015 Brian Jones <brian.j.jones@intel.com> accepted/tizen/ivi/20141223.032814-1-g4ebbfe1
+- Updating manifest file to specify Murphy role - TC-1731
+
 * Mon Dec 22 2014 Jimmy Huang <jimmy.huang@intel.com> accepted/tizen/ivi/20141212.011920-1-gd50348c
 - Fix TC-2267 - Calling history refresh too slow
 
